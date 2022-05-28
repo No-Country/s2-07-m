@@ -1,7 +1,9 @@
-import './Inicio.css'
+import './css/Inicio.css'
 
 
 export const Inicio = () => {
+
+
   return (
     <div className='inicio-body'>
       <h1>

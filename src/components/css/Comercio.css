@@ -1,0 +1,31 @@
+.container-body h1{
+    text-align: center;
+    font-size: 40px;
+}
+
+.container-card {
+    display: grid;
+    grid-template-columns:repeat(auto-fill, minmax(15rem, auto));
+}
+
+.container-card h1{
+    text-align: center;
+}
+
+.card-comercio{
+    /* background-color: rgba(179, 179, 179, .3); */
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
+    border-radius: 4px;
+    margin: 10px;
+    height: fit-content;
+    text-align-last: center;
+    padding: 10px;
+}
+
+.card-comercio img {
+    border-radius: 6px;
+}
+
+.card-comercio p {
+    text-align: center;
+}
