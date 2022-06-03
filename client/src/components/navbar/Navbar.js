@@ -2,9 +2,9 @@
 // import { Link, Outlet } from 'react-router-dom'
 
 import { Link, Outlet } from 'react-router-dom'
-import './NavBar.css'
+import './navbar.css'
 
-export const NavBarMenu = () => {
+export const Navbar = () => {
   return (
     <>
     {/* <Navbar className='nav-bar' variant='dark' expand="lg">
