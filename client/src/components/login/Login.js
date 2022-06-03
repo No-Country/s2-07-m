@@ -1,6 +1,6 @@
-import './css/Form.css'
+import './login.css'
 
-export const LogIn = () => {
+export const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     console.log(e)

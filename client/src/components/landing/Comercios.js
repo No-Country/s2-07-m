@@ -1,6 +1,6 @@
-import { Data } from '../data/Data'
+import { Data } from '../../data/Data'
 
-import './css/Comercio.css'
+import './styles/comercios.css'
 
 export const Comercios = () => {
 
