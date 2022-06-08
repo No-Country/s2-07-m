@@ -1,7 +1,7 @@
-import './css/Inicio.css'
+import './styles/landing.css'
 
 
-export const Inicio = () => {
+export const Landing = () => {
 
 
   return (
