@@ -1,20 +1,7 @@
-.inicio-body{
-    background: linear-gradient(rgb(16, 1, 82),rgb(29, 20, 20));
-    display: flex;
+.landing-body{
+    background:whitesmoke;
     align-items: center;
-    justify-content: space-around;
-    padding: 25px;
-    height: 100vh;
+    padding: 0;
+    margin: 0;
 }
-.inicio-body h1{
-    color: #fff;
-    text-align: center;
-    font-size: 40px;
-}
-.inicio-body p{
-    color: #fff;
-    max-width: 300px;
-    margin: 15px;
-    font-size: larger;
 
-}

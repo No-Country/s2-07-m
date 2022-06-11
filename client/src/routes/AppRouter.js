@@ -29,13 +29,11 @@ export const AppRouter = () => {
     // </Routes>
 
     <Routes>
-      <Route path='/' element={<Navbar />}>
+      {/* <Route path='/' element={<Navbar />}> */}
         <Route index element={<Landing />} />
-        <Route path='comercios' element={<Comercios />} />
-        <Route path='servicios' element={<Servicios />} />
         <Route path='login' element={<Login />} />
         <Route path='*' element={<Navigate replace to='/' />} />
-      </Route>
+      {/* </Route> */}
 
     </Routes>
   )
