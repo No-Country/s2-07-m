@@ -40,6 +40,7 @@ export const Inicio = () => {
         <h1>Menú Digital</h1>
       </div>
       <div className='home-subtitle'>
+        <div className='home-trans-box'></div>
         <p>Ahora podras tener el menú de tu comercio a la alcance de todos tus clientes. </p>
       </div>0
     </header>
