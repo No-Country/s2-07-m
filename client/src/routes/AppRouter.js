@@ -3,11 +3,13 @@ import {
   Route,
   Navigate
 } from "react-router-dom";
-import { Comercios } from "../components/landing/Comercios";
+// import { Comercios } from "../components/landing/Comercios";
 import { Landing } from "../components/landing/Landing";
-import { Servicios } from "../components/landing/Servicios";
-import { Login } from "../components/login/Login";
-import { Navbar } from "../components/navbar/Navbar";
+// import { Servicios } from "../components/landing/Servicios";
+import { Ingresar} from "../components/login/Ingresar";
+import { Registro } from "../components/login/Registro";
+// import { Re} from "../components/login/Registro";
+// import { Navbar } from "../components/navbar/Navbar";
 
 export const AppRouter = () => {
 
@@ -31,7 +33,8 @@ export const AppRouter = () => {
     <Routes>
       {/* <Route path='/' element={<Navbar />}> */}
         <Route index element={<Landing />} />
-        <Route path='login' element={<Login />} />
+        <Route path='ingresar' element={<Ingresar />} />
+        <Route path='registro' element={<Registro />} />
         <Route path='*' element={<Navigate replace to='/' />} />
       {/* </Route> */}
 
