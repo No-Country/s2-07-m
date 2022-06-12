@@ -32,10 +32,10 @@ export const Inicio = () => {
               <a className="nav-link" aria-current="page" href="#comercios">Comercios</a>
             </li>
             <li className="nav-item">
-            <Link className='btn btn-primary' to='/Login' >Registrate</Link>
+            <Link className='btn btn-primary' to='/registro' >Registrate</Link>
             </li>
             <li className="nav-item">
-            <Link className='btn btn-outline-primary' to='/Signin' >Ingresá</Link>
+            <Link className='btn btn-outline-primary' to='/ingresar' >Ingresá</Link>
             </li>
           </ul>
         </div>
