@@ -4,7 +4,8 @@ import {
   Navigate
 } from "react-router-dom";
 import { Landing } from "../components/landing/Landing";
-import { Login } from "../components/login/Login";
+import { Ingresar} from "../components/login/Ingresar";
+import { Registro } from "../components/login/Registro";
 
 export const AppRouter = () => {
 
@@ -28,9 +29,8 @@ export const AppRouter = () => {
     <Routes>
       {/* <Route path='/' element={<Navbar />}> */}
         <Route index element={<Landing />} />
-        <Route path='login' element={<Login />} />
-        {/* <Route path='signin' element={<Signin />} /> */}
-        <Route path='*' element={<Navigate replace to='/' />} />
+        <Route path='ingresar' element={<Ingresar />} />
+        <Route path='registro' element={<Registro />} />
       {/* </Route> */}
 
     </Routes>
