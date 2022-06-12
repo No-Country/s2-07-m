@@ -4,7 +4,7 @@ import {
   Navigate
 } from "react-router-dom";
 import { Landing } from "../components/landing/Landing";
-import { Ingresar} from "../components/login/Ingresar";
+import { Ingresar } from "../components/login/Ingresar";
 import { Registro } from "../components/login/Registro";
 
 export const AppRouter = () => {
@@ -27,13 +27,9 @@ export const AppRouter = () => {
     // </Routes>
 
     <Routes>
-      {/* <Route path='/' element={<Navbar />}> */}
-        <Route index element={<Landing />} />
-        <Route path='ingresar' element={<Ingresar />} />
-        <Route path='registro' element={<Registro />} />
-        <Route path='*' element={<Navigate replace to='/' />} />
-      {/* </Route> */}
-
+      import {Landing} from "../components/landing/Landing";
+      import {Ingresar} from "../components/login/Ingresar";
+      import {Registro} from "../components/login/Registro";
     </Routes>
   )
 }
