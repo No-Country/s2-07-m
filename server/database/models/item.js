@@ -11,6 +11,13 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      Item.belongsTo( models.Categoria, {foreignKey: 'categoriaId'});
+      Item.belongsToMany( models.Pedido, {
+        through:'PedidosItem',
+        foreignKey: 'itemId',
+        otherKey: 'pedidoId',
+        timestamps: true
+      });
     }
   };
   Item.init({
@@ -20,6 +27,8 @@ module.exports = (sequelize, DataTypes) => {
   }, {
     sequelize,
     modelName: 'Item',
+    paranoid: true,
+    timestamps:true,
   });
   return Item;
 };
