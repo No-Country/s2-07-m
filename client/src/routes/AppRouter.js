@@ -31,9 +31,10 @@ export const AppRouter = () => {
     // </Routes>
 
     <Routes>
-      import {Landing} from "../components/landing/Landing";
-      import {Ingresar} from "../components/login/Ingresar";
-      import {Registro} from "../components/login/Registro";
+      <Route index element={<Landing />} />
+        <Route path='ingresar' element={<Ingresar />} />
+        <Route path='registro' element={<Registro />} />
+        <Route path='*' element={<Navigate replace to='/' />} />
     </Routes>
   )
 }
