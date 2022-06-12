@@ -3,13 +3,6 @@
 	min-height: 100vh;
 }
 
-h1 {
-	margin: 0;
-	color: #fff;
-	text-align: center;
-	font-size: 40px;
-}
-
 .home-title {
 	position: absolute;
 	width: 350px;

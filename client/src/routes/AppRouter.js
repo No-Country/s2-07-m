@@ -3,11 +3,8 @@ import {
   Route,
   Navigate
 } from "react-router-dom";
-import { Comercios } from "../components/landing/Comercios";
 import { Landing } from "../components/landing/Landing";
-import { Servicios } from "../components/landing/Servicios";
 import { Login } from "../components/login/Login";
-import { Navbar } from "../components/navbar/Navbar";
 
 export const AppRouter = () => {
 
@@ -32,6 +29,7 @@ export const AppRouter = () => {
       {/* <Route path='/' element={<Navbar />}> */}
         <Route index element={<Landing />} />
         <Route path='login' element={<Login />} />
+        {/* <Route path='signin' element={<Signin />} /> */}
         <Route path='*' element={<Navigate replace to='/' />} />
       {/* </Route> */}
 

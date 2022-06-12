@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js'
+import { Link } from 'react-router-dom';
 import flecha from '../../assets/img/header-arrow-title.png'
 import background from '../../assets/img/header-food-background-xl.png'
 
@@ -18,19 +19,23 @@ export const Inicio = () => {
         <div className="container-fluid justify-content-end">
           <ul className="nav">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#servicios">Servicios</a>
+            {/* <Link className='nav-link' to='#servicios' >Servicios</Link> */}
+              <a className="nav-link" aria-current="page" href="#servicios">Servicios</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" aria-current="page" href="#beneficios">Beneficios</a>
             </li>
             <li className="nav-item">
+              <a className="nav-link" aria-current="page" href="#pasos">Pasos</a>
+            </li>
+            <li className="nav-item">
               <a className="nav-link" aria-current="page" href="#comercios">Comercios</a>
             </li>
             <li className="nav-item">
-              <button className="btn btn-primary " aria-current="page" onClick={() => window.location.href = '#servicios'} >Registrate</button>
+            <Link className='btn btn-primary' to='/Login' >Registrate</Link>
             </li>
             <li className="nav-item">
-              <button className="btn btn-outline-primary " aria-current="page" onClick={() => window.location.href = '#servicios'}>Ingresá</button>
+            <Link className='btn btn-outline-primary' to='/Signin' >Ingresá</Link>
             </li>
           </ul>
         </div>
