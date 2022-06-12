@@ -9,6 +9,7 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       numero: {
+        allowNull: false,
         type: Sequelize.INTEGER
       },
       createdAt: {
@@ -17,6 +18,10 @@ module.exports = {
       },
       updatedAt: {
         allowNull: false,
+        type: Sequelize.DATE
+      },
+      deletedAt: {
+        allowNull: true,
         type: Sequelize.DATE
       }
     });

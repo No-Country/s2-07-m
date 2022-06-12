@@ -9,6 +9,8 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       estado: {
+        allowNull: false,
+        default: 'Pendiente',
         type: Sequelize.STRING
       },
       createdAt: {

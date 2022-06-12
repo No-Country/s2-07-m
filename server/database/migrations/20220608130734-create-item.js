@@ -9,12 +9,14 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       nombre: {
+        allowNull: false,
         type: Sequelize.STRING
       },
       imagen: {
         type: Sequelize.STRING
       },
       precio: {
+        allowNull: false,
         type: Sequelize.INTEGER
       },
       createdAt: {
@@ -23,6 +25,10 @@ module.exports = {
       },
       updatedAt: {
         allowNull: false,
+        type: Sequelize.DATE
+      },
+      deletedAt: {
+        allowNull: true,
         type: Sequelize.DATE
       }
     });
