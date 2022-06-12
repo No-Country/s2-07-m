@@ -20,11 +20,7 @@ export const Landing = () => {
       <Pasos />
       <Comercios />
       
-
-      {/* <h1>
-        Inicio
-      </h1>
-      <p>Nulla tempor deserunt deserunt est excepteur exercitation do aute ex deserunt voluptate eiusmod.Nulla tempor deserunt deserunt est excepteur exercitation do aute ex deserunt voluptate eiusmod.</p> */}
+      <span class="ir-arriba"></span>
     </body>
   )
  
