@@ -31,6 +31,7 @@ export const AppRouter = () => {
         <Route index element={<Landing />} />
         <Route path='ingresar' element={<Ingresar />} />
         <Route path='registro' element={<Registro />} />
+        <Route path='*' element={<Navigate replace to='/' />} />
       {/* </Route> */}
 
     </Routes>
