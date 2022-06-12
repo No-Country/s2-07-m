@@ -4,6 +4,7 @@ import { Beneficios } from './Beneficios'
 import { Comercios } from './Comercios'
 import { Inicio } from './Inicio'
 import {Servicios} from './Servicios'
+import {Pasos} from './Pasos'
 import './styles/landing.css'
 
 
@@ -16,13 +17,10 @@ export const Landing = () => {
       <Inicio /> 
       <Servicios />
       <Beneficios />
+      <Pasos />
       <Comercios />
       
-
-      {/* <h1>
-        Inicio
-      </h1>
-      <p>Nulla tempor deserunt deserunt est excepteur exercitation do aute ex deserunt voluptate eiusmod.Nulla tempor deserunt deserunt est excepteur exercitation do aute ex deserunt voluptate eiusmod.</p> */}
+      <span class="ir-arriba"></span>
     </body>
   )
  

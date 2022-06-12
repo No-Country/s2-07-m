@@ -1,4 +1,40 @@
+
 #servicios{
+  min-height: 100vh;
+  color: black;  
+  background-image: url(../../../assets/img/services-background-xl.png) ;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.services-background{
   height: 100vh;
-  
+}
+.services-title{
+  text-align: center;
+  margin-top:10vh;
+  width: 545px;
+  height: 247px;
+  background-image: url(../../../assets/img/titles-round.png) ;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.services-title h1{
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: normal;
+}
+.services-subtitle{
+  margin-top: 10px;
+  width: 494px;
+  height: 206px;
+}
+.services-subtitle p{
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: right;
 }
