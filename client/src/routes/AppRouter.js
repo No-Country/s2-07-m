@@ -31,6 +31,7 @@ export const AppRouter = () => {
     // </Routes>
 
     <Routes>
+      {/* <Route path='/' element={<Navbar />}> */}
       <Route index element={<Landing />} />
         <Route path='ingresar' element={<Ingresar />} />
         <Route path='registro' element={<Registro />} />
