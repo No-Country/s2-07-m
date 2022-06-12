@@ -1,0 +1,60 @@
+#beneficios {
+	min-height: 100vh;
+	color: black;
+}
+.beneficios-container {
+	margin-left: 70px;
+}
+.beneficios-title {
+	padding-top: 90px;
+	width: 500px;
+	text-align: center;
+}
+.beneficios-title h1 {
+	font-family: "Raleway", sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 96px;
+	line-height: normal;
+	margin-bottom: 0;
+}
+.beneficios-title-underline {
+	background-image: url("../../../assets/img/title-underline-1.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	height: 90px;
+	width: 470px;
+}
+
+.beneficios-list-container {
+	margin-top: 100px;
+	margin-left: 8vw;
+}
+.beneficios-list {
+	list-style: none;
+	padding-left: 0;
+  max-width: 850px;
+}
+.beneficios-list li {
+	position: relative;
+  margin-bottom: 30px;
+	padding-left: 100px;
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 42px;
+}
+.beneficios-list li:before {
+	content: "";
+	width: 82px;
+	height: 55px;
+	position: absolute;
+	background-image: url("../../../assets/img/arrow-item.png");
+	background-size: cover;
+	background-position: center;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
