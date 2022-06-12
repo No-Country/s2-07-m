@@ -3,9 +3,13 @@ import {
   Route,
   Navigate
 } from "react-router-dom";
+// import { Comercios } from "../components/landing/Comercios";
 import { Landing } from "../components/landing/Landing";
-import { Ingresar } from "../components/login/Ingresar";
+// import { Servicios } from "../components/landing/Servicios";
+import { Ingresar} from "../components/login/Ingresar";
 import { Registro } from "../components/login/Registro";
+// import { Re} from "../components/login/Registro";
+// import { Navbar } from "../components/navbar/Navbar";
 
 export const AppRouter = () => {
 
