@@ -3,6 +3,7 @@ import {
   Route,
   Navigate
 } from "react-router-dom";
+import { Footer } from "../components/footer/Footer";
 // import { Comercios } from "../components/landing/Comercios";
 import { Landing } from "../components/landing/Landing";
 // import { Servicios } from "../components/landing/Servicios";
@@ -29,13 +30,16 @@ export const AppRouter = () => {
     //         }>
     //       </Route>       
     // </Routes>
-
+    <>
     <Routes>
       {/* <Route path='/' element={<Navbar />}> */}
         <Route index element={<Landing />} />
         <Route path='ingresar' element={<Ingresar />} />
         <Route path='registro' element={<Registro />} />
         <Route path='*' element={<Navigate replace to='/' />} />
+        
     </Routes>
+    <Footer />
+    </>
   )
 }

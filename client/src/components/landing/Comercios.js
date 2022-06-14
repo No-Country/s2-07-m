@@ -30,12 +30,12 @@ export const Comercios = () => {
         <div class="col-md-5">
           <div className='row comerces-subtitle'>
             <div className='col'>
-              <p>Ellos son allgunos de  los comercios que ya estan usando nuestro menú digital</p>
+              <p>Ellos son algunos de los comercios que ya estan usando nuestro menú digital</p>
             </div>
           </div>
           <div className='row'>
             <div className='col'>
-              <Link className='btn btn-primary' to='/comercios' >Ver más</Link>
+              {/* <Link className='btn btn-primary' to='/comercios' >Ver más</Link> */}
             </div>
           </div>
         </div>
