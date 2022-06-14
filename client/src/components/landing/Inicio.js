@@ -1,16 +1,10 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.min.js'
+import React from 'react';
 import { Link } from 'react-router-dom';
-import flecha from '../../assets/img/header-arrow-title.png'
-import background from '../../assets/img/header-food-background-xl.png'
-
-
-import './styles/inicio.css'
-
-
+import flecha from '../../assets/img/header-arrow-title.png';
+import background from '../../assets/img/header-food-background-xl.png';
+import './styles/inicio.css';
 
 export const Inicio = () => {
-
   return (
 
     <header id='home'>
@@ -19,7 +13,6 @@ export const Inicio = () => {
         <div className="container-fluid justify-content-end">
           <ul className="nav">
             <li className="nav-item">
-            {/* <Link className='nav-link' to='#servicios' >Servicios</Link> */}
               <a className="nav-link" aria-current="page" href="#servicios">Servicios</a>
             </li>
             <li className="nav-item">
@@ -32,10 +25,10 @@ export const Inicio = () => {
               <a className="nav-link" aria-current="page" href="#comercios">Comercios</a>
             </li>
             <li className="nav-item">
-            <Link className='btn btn-primary' to='/registro' >Registrate</Link>
+              <Link className='btn btn-primary' to='/registro' >Registrate</Link>
             </li>
             <li className="nav-item">
-            <Link className='btn btn-outline-primary' to='/ingresar' >Ingresá</Link>
+              <Link className='btn btn-outline-primary' to='/ingresar' >Ingresá</Link>
             </li>
           </ul>
         </div>
@@ -46,8 +39,8 @@ export const Inicio = () => {
       </div>
       <div className='home-subtitle'>
         <div className='home-trans-box'></div>
-        <p>Ahora podras tener el menú de tu comercio a la alcance de todos tus clientes. </p>
-      </div>0
+        <p>Ahora podras tener el menú de tu comercio a la alcance de todos tus clientes.</p>
+      </div>
     </header>
 
   );

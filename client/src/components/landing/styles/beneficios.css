@@ -26,7 +26,6 @@
 	height: 90px;
 	width: 470px;
 }
-
 .beneficios-list-container {
 	margin-top: 100px;
 	margin-left: 8vw;
@@ -34,11 +33,11 @@
 .beneficios-list {
 	list-style: none;
 	padding-left: 0;
-  max-width: 850px;
+	max-width: 850px;
 }
 .beneficios-list li {
 	position: relative;
-  margin-bottom: 30px;
+	margin-bottom: 30px;
 	padding-left: 100px;
 	font-family: "Raleway";
 	font-style: normal;
