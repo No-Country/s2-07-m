@@ -7,21 +7,21 @@ export const Comercios = () => {
 
     <section id='comercios' className='row g-0'>
       <div className='row'>
-        <div class="col-md-6 align-items-center">
+        <div className="col-md-6 align-items-center">
           <div className='row horizontal-center comerces-title'>
             <div className='vertical-center'>
               <h1>comercios</h1>
             </div>
           </div>
         </div>
-        <div class="col-md-6">
+        <div className="col-md-6">
         </div>
       </div>
       <div className='row'>
-        <div class="col-md-7">
+        <div className="col-md-7">
           <img className='commerces-background ' src={comercios} alt='' />
         </div>
-        <div class="col-md-5">
+        <div className="col-md-5">
           <div className='row comerces-subtitle'>
             <div className='col'>
               <p>Ellos son algunos de los comercios que ya estan usando nuestro menú digital</p>

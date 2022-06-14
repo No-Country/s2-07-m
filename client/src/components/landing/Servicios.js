@@ -4,9 +4,9 @@ import './styles/servicios.css';
 export const Servicios = () => {
   return (
     <section id='servicios' className='row g-0'>
-      <div class="col-md-6">
+      <div className="col-md-6">
       </div>
-      <div class="col-md-6 align-items-center">
+      <div className="col-md-6 vertical-center">
         <div className='row horizontal-center services-title'>
           <div className='vertical-center'>
             <h1>Servicios</h1>
