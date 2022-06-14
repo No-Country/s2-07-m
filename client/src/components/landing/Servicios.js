@@ -1,5 +1,5 @@
-import React from 'react'
-import './styles/servicios.css'
+import React from 'react';
+import './styles/servicios.css';
 
 export const Servicios = () => {
   return (
@@ -9,7 +9,7 @@ export const Servicios = () => {
       <div class="col-md-6 align-items-center">
         <div className='row horizontal-center services-title'>
           <div className='vertical-center'>
-          <h1>Servicios</h1>
+            <h1>Servicios</h1>
           </div>
         </div>
         <div className='row horizontal-center services-subtitle'>

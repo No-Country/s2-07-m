@@ -1,14 +1,14 @@
 #pasos {
-  min-height: 100vh;
+	min-height: 100vh;
 	color: black;
 }
 .steps-container {
 	margin-right: 30px;
 }
 .steps-title {
-  padding-top: 90px;
-  padding-right: 40px;
-	text-align: right; 
+	padding-top: 90px;
+	padding-right: 40px;
+	text-align: right;
 }
 .steps-title h1 {
 	font-family: "Raleway", sans-serif;
@@ -19,11 +19,10 @@
 	margin-bottom: 0;
 }
 .steps-title-underline {
-  height: 70px;
+	height: 70px;
 }
-
-.steps-background{
-  background-image: url("../../../assets/img/steps-background.png");
+.steps-background {
+	background-image: url("../../../assets/img/steps-background.png");
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;

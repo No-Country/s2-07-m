@@ -1,6 +1,6 @@
-import React from 'react'
-import './styles/pasos.css'
-import underline from '../../assets/img/title-underline-2.png'
+import React from 'react';
+import './styles/pasos.css';
+import underline from '../../assets/img/title-underline-2.png';
 
 export const Pasos = () => {
   return (
