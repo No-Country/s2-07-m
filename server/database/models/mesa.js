@@ -11,6 +11,8 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      Mesa.belongsTo( models.Tienda, {foreignKey: 'tiendaId'});
+      Mesa.hasMany(models.Pedido, { foreignKey: 'mesaId' });
     }
   };
   Mesa.init({
@@ -18,6 +20,8 @@ module.exports = (sequelize, DataTypes) => {
   }, {
     sequelize,
     modelName: 'Mesa',
+    paranoid: true,
+    timestamps:true,
   });
   return Mesa;
 };

@@ -1,31 +1,36 @@
-.container-body h1{
-    text-align: center;
-    font-size: 40px;
+#comercios {
+	min-height: 100vh;
+	color: black;
 }
-
-.container-card {
-    display: grid;
-    grid-template-columns:repeat(auto-fill, minmax(15rem, auto));
+.comerces-title {
+	text-align: center;
+	margin-top: 10vh;
+	width: 560px;
+	height: 230px;
+	background-image: url(../../../assets/img/titles-round-2.png);
+	background-repeat: no-repeat;
+	background-size: contain;
 }
-
-.container-card h1{
-    text-align: center;
+.comerces-title h1 {
+	font-family: "Raleway", sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 96px;
+	line-height: normal;
 }
-
-.card-comercio{
-    /* background-color: rgba(179, 179, 179, .3); */
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, .3);
-    border-radius: 4px;
-    margin: 10px;
-    height: fit-content;
-    text-align-last: center;
-    padding: 10px;
+.comerces-subtitle {
+	padding-top: 40px;
+	width: 494px;
 }
-
-.card-comercio img {
-    border-radius: 6px;
+.comerces-subtitle p {
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 42px;
+	line-height: 48px;
+	text-align: left;
 }
-
-.card-comercio p {
-    text-align: center;
+.commerces-background {
+	margin-left: 15%;
+	width: 70%;
 }

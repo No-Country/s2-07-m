@@ -9,6 +9,7 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       nombre: {
+        allowNull: false,
         type: Sequelize.STRING
       },
       logo: {
@@ -18,6 +19,7 @@ module.exports = {
         type: Sequelize.STRING
       },
       pais: {
+        allowNull: false,
         type: Sequelize.STRING
       },
       provincia: {
