@@ -58,7 +58,7 @@ export const Ingresar = () => {
             <input 
               id="email"
               name="email"
-              type="text"
+              type="email"
               autoComplete='off'
               placeholder='Ingresa tu email'
               value={ email }
@@ -71,8 +71,8 @@ export const Ingresar = () => {
             <input 
               id="password"
               name="password"
-              type="text"
-              placeholder= 'Ingresa contrseña'
+              type="password"
+              placeholder= 'Ingresa contraseña'
               autoComplete='off'
               value={ password }
               onChange={ handleInputChange }

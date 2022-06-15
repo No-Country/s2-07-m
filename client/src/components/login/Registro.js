@@ -1,4 +1,4 @@
-import {useState, useEffect} from 'react'
+import {useState} from 'react'
 
 import './login.css'
 import registro from '../../assets/img/fondo-registro.png'
@@ -84,7 +84,7 @@ export const Registro = () => {
             <input 
               id="email"
               name="email"
-              type="text"
+              type="email"
               autoComplete='off'
               placeholder='Ingresa tu email'
               value={ email }
@@ -97,7 +97,7 @@ export const Registro = () => {
             <input 
               id="password"
               name="password"
-              type="text"
+              type="password"
               placeholder= 'Ingresa contrseña'
               autoComplete='off'
               value={ password }
