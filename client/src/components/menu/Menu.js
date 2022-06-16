@@ -6,11 +6,11 @@ import { MenuSuggestions } from './MenuSuggestions';
 
 export const Menu = () => {
   return (
-    <section className='menu'>
-  
+    <div className='menu'>
+    
     <MenuCategories />
     <MenuSuggestions />
     <Ratings />
-    </section>
+    </div>
   )
 }

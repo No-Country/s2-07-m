@@ -1,0 +1,29 @@
+.card.category-card {
+	background-color: black;
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 2vw;
+	line-height: 42px;
+	color: #01072b;
+	border-radius: 0;
+	border: 0;
+	margin-bottom: 20px;
+}
+.card.category-card .card-img{
+	border-radius: 0;	
+}
+.card.category-card .card-img-overlay{
+	position: absolute;
+	top: 40%;
+	text-align: right;
+}
+.card.category-card .card-img-overlay:hover{
+	background-color: blanchedalmond;
+}
+.card.category-card .card-img-overlay {
+	transition: background-color 0.5s linear 0.5s;
+}
+.bi.bi-arrow-right{
+	color:#90ff03;
+}
