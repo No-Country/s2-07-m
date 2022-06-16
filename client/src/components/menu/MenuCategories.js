@@ -1,5 +1,5 @@
 import React from 'react'
-import './stytles/menuCategories.css'
+import './styles/menuCategories.css'
 import { CategorieCard } from './CategorieCard'
 import img1 from '../../assets/img/categories-bg-bebidas-calientes.png'
 import img2 from '../../assets/img/categories-bg-bebidas-frias.png'
@@ -16,7 +16,7 @@ export const MenuCategories = () => {
         <p>Escoje entre nuestras diferentes opciones de productos deliciosos.</p>
       </div>
       <div className="container">
-        <div className="row row-cols-2 row-cols-lg-3">
+        <div className="row row-cols-md-1 row-cols-lg-2 row-cols-xl-2 ">
           <div className="col">
             <CategorieCard background={img1} text='Bebidas Calientes' ctg="?q=bebidas-calientes"/>
           </div>

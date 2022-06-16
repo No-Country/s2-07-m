@@ -1,5 +1,5 @@
 import React from 'react';
-import './stytles/menu.css';
+import './styles/menu.css';
 import { Ratings } from '../rating/Ratings';
 import { MenuCategories } from './MenuCategories';
 import { MenuSuggestions } from './MenuSuggestions';

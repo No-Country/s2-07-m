@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import './stytles/categoryCard.css'
+import './styles/categoryCard.css'
 
 export const CategorieCard = (props) => {
   const {background, text, ctg}=props;
