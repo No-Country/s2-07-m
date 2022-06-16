@@ -1,0 +1,68 @@
+.container-body {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.container-imagen {
+    width: 50%;
+    background-color: black;
+}
+.titulo {
+    font-family: "Raleway", sans-serif;
+    padding-bottom: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.titulo h1{
+    color: black;
+}
+
+.container-datos {
+    width: 50%;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 15px;
+}
+
+
+
+.inp{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input {
+    background-color: rgb(206, 206, 206);
+    width: 80%;
+    border-radius: 6px;
+    padding: 15px;
+    font-size: large;
+    border: none;
+}
+
+button{
+    background-color: #90FF03;
+    font-weight: 700;
+    border-radius: 6px;
+    border: none;
+    font-size: 20px;
+    margin: auto;
+    display: block;
+    padding: 8px 40px;
+    
+}
+
+button:hover{
+    cursor: pointer;
+    transform: scale(1.08);
+    background-color: rgb(2, 134, 2);
+    color: #fff;
+}
+
+.imagen{
+    height: 100%;
+}
