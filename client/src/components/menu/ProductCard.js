@@ -3,6 +3,11 @@ import './styles/productCard.css'
 export const ProductCard = (props) => {
   const {prod}=props;
   
+  const handleButton = () =>{
+
+    alert(`${prod.title} fue añadido al carrito con éxito`)
+  }
+
   return (
     <div className='card product-card' key={prod.id} >
               <div className='img-container'>
@@ -16,6 +21,7 @@ export const ProductCard = (props) => {
                 <h6>Precio</h6>
                 <h4>$ {prod.price}</h4>
               </div>
+              <button onClick={handleButton} >Agregar al carrito</button>
             </div>    
   )
 }
