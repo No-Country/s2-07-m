@@ -12,9 +12,11 @@ const userController = {
      */
     getUsers: async (req, res) => {
         try {
-            //const data = modelUser.finn
-            return res.send('Todos los usuarios')
-            
+            let users = await modelUser.findAll();
+            return res.status(200).json({
+              total: users.length,
+              users,
+            });
         } catch (error) {
             res.status(400).send('No se puede acceder a usuarios')
             
@@ -28,7 +30,18 @@ const userController = {
      */
     getUser: async (req, res) => {
         try {
-            return res.send(`Hola usuario ${req.params.id}`)
+            //return res.send(`Hola usuario ${req.params.id}`)
+            const { id } = req.params
+            const user = await modelUser.findByPk(id);
+            
+            if (!user) {
+                return res.status(400).json({
+                    msg :"Usuario no encontrado"
+                });
+            }
+            return res.status(200).json({
+                user,
+            });
             
         } catch (error) {
             res.status(400).send('No se puede acceder al usuario')
@@ -45,20 +58,22 @@ const userController = {
     createUser: async (req, res) => {
         try {
             
-
+            // const errors = validationResult(req);
+            // if (!errors.isEmpty()) {
+            //     return res.status(400).json({ errors: errors.mapped() });
+            // }
             
              //extrae el mail y el password
             const { nombre, apellido, email, password } = req.body;
-            console.log(email);
-            console.log(password);
 
             
 
-            const user = await modelUser.findOne({ email });
-            if (user) {
-               return res.status(400).json({ msg: "El usuario ya existe" });
-             }
-             user = new modelUser(req.body);
+            await modelUser.findOne({ email });
+            if (email) {
+                return res.status(400).json({ msg: "El usuario ya existe" });
+              }
+              
+            const user = await modelUser.create(req.body);
 
 
             console.log(user);
@@ -66,7 +81,9 @@ const userController = {
             //guarda el usuario
             await user.save();
 
-            
+            res.status(200).json({
+                msg: "Usuario creado exitosamente",
+              });
             //return res.send('Agregando usuario')
         } catch (error) {
             res.status(400).send(`No se puede acceder a usuarios: ${error}`)
