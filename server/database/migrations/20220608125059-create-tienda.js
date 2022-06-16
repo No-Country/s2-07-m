@@ -58,6 +58,20 @@ module.exports = {
       domingo: {
         type: Sequelize.BOOLEAN
       },
+      usuarioId: {
+        type: Sequelize.INTEGER,
+        references: {
+          model: 'Usuarios',
+          key:'id',
+        }
+      },
+      monedaId: {
+        type: Sequelize.INTEGER,
+        references: {
+          model: 'Monedas',
+          key:'id',
+        }
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

@@ -16,7 +16,8 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
   Mesa.init({
-    numero: DataTypes.INTEGER
+    numero: DataTypes.INTEGER,
+    tiendaId: DataTypes.INTEGER
   }, {
     sequelize,
     modelName: 'Mesa',

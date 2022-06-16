@@ -12,6 +12,13 @@ module.exports = {
         allowNull: false,
         type: Sequelize.INTEGER
       },
+      tiendaId: {
+        type: Sequelize.INTEGER,
+        references: {
+          model: 'Tiendas',
+          key:'id',
+        }
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

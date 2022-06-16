@@ -13,6 +13,13 @@ module.exports = {
         default: 'Pendiente',
         type: Sequelize.STRING
       },
+      mesaId: {
+        type: Sequelize.INTEGER,
+        references: {
+          model: 'Mesas',
+          key:'id',
+        }
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE

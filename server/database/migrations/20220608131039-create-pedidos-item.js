@@ -13,6 +13,20 @@ module.exports = {
         default: 1,
         type: Sequelize.INTEGER
       },
+      pedidoId: {
+        type: Sequelize.INTEGER,
+        references: {
+          model: 'Pedidos',
+          key:'id',
+        }
+      },
+      itemId: {
+        type: Sequelize.INTEGER,
+        references: {
+          model: 'Items',
+          key:'id',
+        }
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE
