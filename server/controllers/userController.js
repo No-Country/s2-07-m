@@ -1,5 +1,7 @@
 
 const modelUser = require('../database/models/usuario')
+//const sequelize = require('sequelize')
+const { Sequelize, Model, DataTypes } = require('sequelize');
 
 const userController = {
     /**
@@ -33,20 +35,24 @@ const userController = {
             
         }
     },
+
+    /**
+     * 
+     * @param {*} req 
+     * @param {*} res 
+     * @returns 
+     */
     createUser: async (req, res) => {
         try {
             
 
-            //revisamos si hay errores
-            // const errors = validationResult(req);
-            // if (!errors.isEmpty()) {
-            //     return res.status(404).json({ errors: errors.mapped() });
-            // }
+            
              //extrae el mail y el password
-            const { email, password } = req.body;
+            const { nombre, apellido, email, password } = req.body;
             console.log(email);
             console.log(password);
 
+            
 
             const user = await modelUser.findOne({ email });
             if (user) {
@@ -55,40 +61,13 @@ const userController = {
              user = new modelUser(req.body);
 
 
-            // //hashear el password
-            // const salt = await bcrypt.genSalt(10);
-            // user.password = await bcrypt.hash(password, salt);
+            console.log(user);
 
-            // //guarda el usuario
-            // await user.save();
+            //guarda el usuario
+            await user.save();
 
-            // //crear y firmar el jwt
-            // const payload = {
-            //     user: {
-            //     id: user.id,
-            //     },
-            // };
-
-            // //firmar el token
-            // jwt.sign(
-            //     payload,
-            //     process.env.SECRET,
-            //     {
-            //     expiresIn: 3600,
-            //     },
-            //     (error, token) => {
-            //     if (error) throw error;
-
-            //     //mensaje de confirmación
-            //     res.json({ token });
-            //     }
-            // );
-
-            //     res.status(200).json({
-            //         msg: "Usuario creado exitosamente",
-            //     });
-
-            return res.send('Agregando usuario')
+            
+            //return res.send('Agregando usuario')
         } catch (error) {
             res.status(400).send(`No se puede acceder a usuarios: ${error}`)
             
