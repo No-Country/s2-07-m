@@ -1,5 +1,5 @@
 var express = require('express');
-const { getUsers, getUser, createUser, updateUser, deleteUser } = require('../controllers/userController');
+const { getUsers, getUser, createUser, updateUser, deleteUser, login } = require('../controllers/userController');
 var router = express.Router();
 
 /* GET users listing. */
@@ -26,6 +26,8 @@ router.put('/:id', updateUser);
  * Borrar un usuario
  */
 router.delete('/:id', deleteUser);
-//router.get('/', detail);
+
+router.post('/login', login);
+
 
 module.exports = router;

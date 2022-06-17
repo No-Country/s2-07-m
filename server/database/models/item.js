@@ -23,8 +23,12 @@ module.exports = (sequelize, DataTypes) => {
   Item.init({
     nombre: DataTypes.STRING,
     imagen: DataTypes.STRING,
+<<<<<<< HEAD
     precio: DataTypes.INTEGER,
     categoriaId: DataTypes.INTEGER
+=======
+    precio: DataTypes.INTEGER
+>>>>>>> 8a3ee0b388d7bd0a68f8b31787731c9711e48ce1
   }, {
     sequelize,
     modelName: 'Item',

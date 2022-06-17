@@ -16,8 +16,12 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
   Categoria.init({
+<<<<<<< HEAD
     nombre: DataTypes.STRING,
     tiendaId: DataTypes.INTEGER
+=======
+    nombre: DataTypes.STRING
+>>>>>>> 8a3ee0b388d7bd0a68f8b31787731c9711e48ce1
   }, {
     sequelize,
     modelName: 'Categoria',

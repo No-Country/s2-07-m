@@ -16,8 +16,12 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
   Mesa.init({
+<<<<<<< HEAD
     numero: DataTypes.INTEGER,
     tiendaId: DataTypes.INTEGER
+=======
+    numero: DataTypes.INTEGER
+>>>>>>> 8a3ee0b388d7bd0a68f8b31787731c9711e48ce1
   }, {
     sequelize,
     modelName: 'Mesa',

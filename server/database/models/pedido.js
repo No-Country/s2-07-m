@@ -21,8 +21,12 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
   Pedido.init({
+<<<<<<< HEAD
     estado: DataTypes.STRING,
     mesaId: DataTypes.INTEGER
+=======
+    estado: DataTypes.STRING
+>>>>>>> 8a3ee0b388d7bd0a68f8b31787731c9711e48ce1
   }, {
     sequelize,
     modelName: 'Pedido',

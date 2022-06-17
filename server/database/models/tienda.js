@@ -33,9 +33,7 @@ module.exports = (sequelize, DataTypes) => {
     jueves: DataTypes.BOOLEAN,
     viernes: DataTypes.BOOLEAN,
     sabado: DataTypes.BOOLEAN,
-    domingo: DataTypes.BOOLEAN,
-    usuarioId: DataTypes.INTEGER,
-    monedaId: DataTypes.INTEGER,
+    domingo: DataTypes.BOOLEAN
   }, {
     sequelize,
     modelName: 'Tienda',
