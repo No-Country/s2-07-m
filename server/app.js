@@ -30,6 +30,7 @@ app.use(express.static(path.join(__dirname, 'public')));
  */
 app.use('/', indexRouter);
 app.use('/api', require('./routes'));
+//app.use('/api/users/login', require('./routes'));
 //app.use('/api/tienda',  );
 
 // catch 404 and forward to error handler
