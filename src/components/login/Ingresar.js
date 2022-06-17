@@ -38,7 +38,7 @@ export const Ingresar = () => {
       //   [target.name] : target.value,
       // })
       const endpoint =
-      'https://nocountry-c4g17-api.herokuapp.com/api/users/login';
+      'https://api-menu-digital-s207m.herokuapp.com/api/users/login';
     // const email = e.target.email.value;
 
     // const password = e.target.password.value;
@@ -60,7 +60,7 @@ export const Ingresar = () => {
     // función para enviar el formulario
     const handleSubmit = (e) => {
       e.preventDefault()
-      
+
       console.log(formState)
       setFormState(initialValue)
       //alert(`Bienvenido: ${email}`)
