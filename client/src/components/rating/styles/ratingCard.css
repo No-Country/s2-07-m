@@ -1,0 +1,21 @@
+
+.card.rating-card {
+	margin-top: 20px;
+	background-color: black;
+	color: whitesmoke;
+	font-family: "Raleway";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 2rem;
+	line-height: 28px;
+}
+.card-body.review {
+	padding: 1em;
+	border: 1px solid #90ff03;
+}
+.card-body.rating {
+	background: #01072b;
+	border-radius: 0px 0px 30px 30px;
+	text-align: center;
+}
+
