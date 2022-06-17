@@ -2,6 +2,8 @@ import './login.css'
 import burguer from '../../assets/img/fondo-ingresa.png'
 import { useEffect, useState } from 'react'
 import data from '../../data/dataUsuarios'
+import sweetAlert from 'sweetalert';
+
 const {email, password} = data;
 console.log('====================================');
 console.log(email);
@@ -15,8 +17,8 @@ console.log('====================================');
 export const Ingresar = () => {
 
   const initialValue = {
-    email: data.email,
-    password: data.password,
+    email: '',
+    password: '',
 
   }
 
@@ -30,20 +32,38 @@ export const Ingresar = () => {
     const { email, password} = formState
     
     // setea el Form con el value de los inputs
-    const handleInputChange = ( {target} ) => {
-      setFormState( {
-        ...formState,
-        [target.name] : target.value,
-      })
+    const handleInputChange = async ( e) => {
+      // setFormState( {
+      //   ...formState,
+      //   [target.name] : target.value,
+      // })
+      const endpoint =
+      'https://nocountry-c4g17-api.herokuapp.com/api/users/login';
+    // const email = e.target.email.value;
+
+    // const password = e.target.password.value;
+    const filter =
+      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@(([^<>()[\]\\.,;:\s@"]+\.)+[^<>()[\]\\.,;:\s@"]{2,})$/i;
+    //comparo que los campos mo esten vacios
+    if (email === '' || password === '') {
+      sweetAlert({ title: 'Campos vacios', icon: 'error' });
+      return;
+    }
+    //comparo que el correo sea válido
+    if (email !== '' && !filter.test(email)) {
+      sweetAlert({ title: 'Correo no válido', icon: 'error' });
+      return;
+    }
   
     }
   
     // función para enviar el formulario
     const handleSubmit = (e) => {
       e.preventDefault()
+      
       console.log(formState)
       setFormState(initialValue)
-      alert(`Bienvenido: ${email}`)
+      //alert(`Bienvenido: ${email}`)
       // Todo: Redireccionar a la pagina de carga de menu
       
     }
@@ -83,7 +103,7 @@ export const Ingresar = () => {
             <input 
               id="password"
               name="password"
-              type="text"
+              type="password"
               placeholder= 'Ingresa contrseña'
               autoComplete='off'
               value={ password }
