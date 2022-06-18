@@ -54,3 +54,9 @@ code {
   margin-left: auto;
   margin-right: auto;
 }
+.bg-primary{
+  background-color: #90FF03;
+}
+.color-primary{
+  color: #90FF03;
+}
