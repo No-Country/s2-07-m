@@ -17,7 +17,7 @@ export const Footer = () => {
             <i className="bi bi-instagram"></i>
           </Link>
           <Link to='#' >
-            <i class="bi bi-facebook"></i>
+            <i className="bi bi-facebook"></i>
           </Link>
         </p>
       </div>

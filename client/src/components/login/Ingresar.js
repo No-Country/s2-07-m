@@ -1,6 +1,10 @@
 import './login.css'
 import burguer from '../../assets/img/fondo-ingresa.png'
+feat-menu-component
+import { Link } from 'react-router-dom'
+=======
 import { useState } from 'react'
+develop
 
 
 
@@ -42,7 +46,7 @@ export const Ingresar = () => {
   return (
     <div className='container-body'>
       <div className='container-imagen'>
-        <img className='imagen' src={burguer} alt=''/>
+        <img className='imagen' src={burguer} alt='' />
       </div>
       <div className='container-datos'>
 
@@ -52,7 +56,10 @@ export const Ingresar = () => {
           <h5>Igresa tus datos</h5>
         </div>
 
-        <form>
+ feat-menu-component
+        <form onSubmit={handleSubmit}>
+
+
           <div className='inp'>
             <label htmlFor="email">Correo</label>
             <input 
@@ -78,13 +85,15 @@ export const Ingresar = () => {
               onChange={ handleInputChange }
             />
           </div>
-
-          <button type="submit" onClick={ handleSubmit }>Ingresar</button>
+ feat-menu-component
+          <Link to={'/carta'}>
+            <button className='btn btn-primary' type="submit">Ingresar</button>
+          </Link>
 
         </form>
-
-        <p>¿Aún no tienes cuenta?</p>
-        <p>Regístrate</p>
+        <Link to='/registro'>
+          <p>¿Aún no tienes cuenta?</p>
+        </Link>
       </div>
     </div>
   )

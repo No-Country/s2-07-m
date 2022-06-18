@@ -2,6 +2,7 @@ import {useState, useEffect} from 'react'
 
 import './login.css'
 import registro from '../../assets/img/fondo-registro.png'
+import { Link } from 'react-router-dom'
 
 
 
@@ -33,11 +34,9 @@ export const Registro = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     console.log(e)
-    console.log(formState)
-    setFormState(initialValue)
-    alert(`Gracias por registrarte: ${name}`)
-    // Todo: Redireccionar a la pagina de carga de menu
-  }
+ 
+    }
+
 
   return (
     <div className='container-body'>
@@ -107,15 +106,24 @@ export const Registro = () => {
 {/* 
           <div className='inp'>
             <label htmlFor="password">Repetir contraseña</label>
+
+            <input id="password" name="password" type="password" />
+          </div>
+<Link to={'/carta'}>
+          <button className='btn btn-primary' type="submit">Registrarse</button>
+</Link>
+=======
             <input id="password2" name="password" type="password" />
             
           </div> */}
 
           <button type="submit" onClick={ handleSubmit }>Registrarse</button>
 
-        </form>
 
-        <p>¿Ya tienes cuenta?</p>
+        </form>
+        <Link to={'/ingresar'}>
+          <p>¿Ya tienes cuenta?</p>
+          </Link>       
       </div>
     </div>
   )

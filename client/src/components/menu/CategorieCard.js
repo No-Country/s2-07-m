@@ -8,9 +8,9 @@ export const CategorieCard = (props) => {
   return (
     <Link to={ctg}>
     <div className="card category-card">
-      <img src={background} class="card-img" alt="..."></img>
+      <img src={background} className="card-img" alt="..."></img>
       <div className="card-img-overlay">
-        <p className="card-text">{text} <i class="bi bi-arrow-right"></i></p>
+        <p className="card-text">{text} <i className="bi bi-arrow-right"></i></p>
       </div>
     </div>
     </Link>
