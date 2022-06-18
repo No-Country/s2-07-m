@@ -1,5 +1,6 @@
 import './login.css'
 import registro from '../../assets/img/fondo-registro.png'
+import { Link } from 'react-router-dom'
 
 
 
@@ -7,7 +8,7 @@ export const Registro = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     console.log(e)
-  }
+    }
 
   return (
     <div className='container-body'>
@@ -46,12 +47,14 @@ export const Registro = () => {
             <label htmlFor="password">Repetir contraseña</label>
             <input id="password" name="password" type="password" />
           </div>
-
-          <button type="submit">Registrarse</button>
+<Link to={'/carta'}>
+          <button className='btn btn-primary' type="submit">Registrarse</button>
+</Link>
 
         </form>
-
-        <p>¿Ya tienes cuenta?</p>
+        <Link to={'/ingresar'}>
+          <p>¿Ya tienes cuenta?</p>
+          </Link>       
       </div>
     </div>
   )

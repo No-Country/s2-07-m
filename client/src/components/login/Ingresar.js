@@ -1,5 +1,6 @@
 import './login.css'
 import burguer from '../../assets/img/fondo-ingresa.png'
+import { Link } from 'react-router-dom'
 
 
 
@@ -12,7 +13,7 @@ export const Ingresar = () => {
   return (
     <div className='container-body'>
       <div className='container-imagen'>
-        <img className='imagen' src={burguer} alt=''/>
+        <img className='imagen' src={burguer} alt='' />
       </div>
       <div className='container-datos'>
 
@@ -22,7 +23,7 @@ export const Ingresar = () => {
           <h5>Igresa tus datos</h5>
         </div>
 
-        <form  onSubmit={ handleSubmit }>
+        <form onSubmit={handleSubmit}>
 
           <div className='inp'>
             <label htmlFor="email">Correo</label>
@@ -33,13 +34,13 @@ export const Ingresar = () => {
             <label htmlFor="password">Contraseña</label>
             <input id="password" name="password" type="password" />
           </div>
-
-          <button type="submit">Ingresar</button>
-
+          <Link to={'/carta'}>
+            <button className='btn btn-primary' type="submit">Ingresar</button>
+          </Link>
         </form>
-
-        <p>¿Aún no tienes cuenta?</p>
-        <p>Regístrate</p>
+        <Link to='/registro'>
+          <p>¿Aún no tienes cuenta?</p>
+        </Link>
       </div>
     </div>
   )
